@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+  </head>
+    <div class="col-lg-6">
+      <form action="/insert_recipe" method="post">
+        {% csrf_token %}
+        <div class=""> 
+          <label for="recipe" style="margin-top: 25px">Recipe Name:</label><br>
+          <input type="text" style="margin-top: 20px" name="recipe_name"><br>
+        </div>
+        <input type="submit" style="margin-top: 25px" value="Submit">
+      </form>
+
+      <form action="/get_recipe">
+        <button type="submit" style="margin-top: 25px">Generate Recipe for Today</button>
+      </form>
+      {% if todays_meal %}
+      <p>Today's chosen recipe is {{todays_meal}}!</p>
+      {% endif %}
+
+      {% if new_recipe %}
+      <p>Successfully added new Recipe {{new_recipe}}!</p>
+      {% endif %}
+      {% comment %} <li><a href="/insert_recipe/chicken">{{recipe_name}}</a></li> {% endcomment %}
+    </div>
+</html>
