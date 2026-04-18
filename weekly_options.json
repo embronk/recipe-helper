@@ -1,0 +1,29 @@
+{
+    "Monday": {
+        "mexican_option": "page number or url"
+    }, 
+    "Tuesday": {
+        "pork_option": "page number or url"
+    }, 
+    "Wednesday": {
+        "easy_option": "page number or url"
+    }, 
+    "Thursday": {
+        "soup_option": "page number or url"
+    }, 
+    "Friday": {
+        "ground_beef_option": "page number or url"
+    }, 
+    "Saturday": {
+        "fun_option": "page number or url"
+    },
+    "Sunday": {
+        "crockpot_option": "Page number or url"
+    }, 
+    "Bread": {
+        "bread_option": "Page number or url"
+    },
+    "Snack": {
+        "snack_option": "Page number or url"
+    }
+}
